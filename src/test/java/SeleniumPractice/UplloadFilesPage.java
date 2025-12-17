@@ -16,6 +16,7 @@ public class UplloadFilesPage {
     void UploadFile() throws InterruptedException {
         driver.findElement(chooseFile).sendKeys("C:\\Automation\\1755938383588.pdf");
         Thread.sleep(3000);
+
     }
 
     void multipleFileUpload() throws InterruptedException {
@@ -23,5 +24,6 @@ public class UplloadFilesPage {
         String file2 = "C:\\Automation\\abg.txt";
         driver.findElement(chooseFile).sendKeys(file1+"\n"+file2);
         Thread.sleep(3000);
+        System.out.println("sreejaaaaaaaaaaa");
     }
 }
